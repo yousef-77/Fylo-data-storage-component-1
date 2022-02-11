@@ -1,0 +1,153 @@
+*{
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 100;
+}
+body{
+    height: 100vh;
+    background-color: hsl(229, 57%, 11%);
+    background-image: url(/fylo-data-storage-component-master/images/bg-desktop.png);
+    background-repeat:no-repeat;
+    background-size: 100% 50%;
+    background-position: bottom;
+}
+.main-container{
+    display: flex;
+    gap: 40px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50% , -55%);
+}
+.fylo{
+    width: 290px;
+    padding: 50px 40px 40px 50px;
+    background-color:  #1d2c67;
+    border-radius: 13px 100px 13px 13px;
+}
+.logo{
+    margin-bottom: 30px;
+    width: 160px;
+    height: 50px;
+}
+.icon>img{
+    background-color:hsl(229, 57%, 11%) ;
+    padding: 14px;
+    border-radius: 10px;
+    margin: 5px;
+    height: 27px;
+    width: 34px;
+}
+.document{
+    height: 30px !important;
+    width: 28px !important;
+}
+img{
+    transition: ease 0.3s;
+    cursor: pointer;
+}
+img:hover{
+    transform: scale(1.1);
+}
+/* 
+ GB-info
+*/
+.gb-info{
+    position: relative;
+    background-color: #1d2c67;
+    padding: 50px ;
+    height: fit-content;
+    width: 510px;
+    border-radius: 12px;
+    align-self: flex-end;
+}
+.used-gb{
+    font-size: 16px;
+    color: hsl(229, 7%, 55%);
+    margin-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+span{
+    color: hsl(243, 100%, 93%);
+    font-weight: bold;
+}
+.line{
+    background-color: rgb(21 29 74);
+    height: 17px;
+    border-radius:40px ;
+    padding: 3px;
+}
+.line-gradient{
+    width: 80%;
+    height: 100%;
+    background-image: linear-gradient(to right,hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
+    border-radius:40px ;
+    display:flex;
+    justify-content: flex-end;
+}
+.circle{
+    margin: 2px;
+    width: 14px;
+    height:14px;
+    border-radius:50% ;
+    background-color: white;
+}
+.number-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9px;
+}
+/* 
+ data-left
+*/
+.data-left{
+    position: absolute;
+    background-color: rgb(254 255 254);
+    padding: 10px 30px;
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    top: -73px;
+    left: 321px;
+}
+.data-left::after{
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-top: rgb(254 255 254) solid 40px;
+    border-left: transparent solid 40px;
+    top: 96px;
+    right: 0px;
+}
+.data{
+    color: hsl(229, 7%, 55%);
+    font-size: 20px;
+}
+.eight{
+    position: relative;
+    top: -5px;
+}
+.five{
+    position: relative;
+    top: 5px;
+}
+.no>span{
+    color: black;
+}
+.no{
+    margin-right: 15px;
+    font-size: 60px;
+    color: black;
+    display: inline;
+}
+.left{
+    display: inline-block;
+    position: relative;
+    top: -8px;
+}
+.attribution { 
+    font-size: 11px;
+    position: absolute;
+    bottom: 0px;
+    left: 40%;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
